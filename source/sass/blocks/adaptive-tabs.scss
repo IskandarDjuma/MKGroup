@@ -1,0 +1,115 @@
+.adaptive-tabs {
+  padding-top: 30px;
+
+  &__nav {
+    display: none;
+  }
+
+  &__link {
+    cursor: pointer;
+    transition: 0.3s all;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px 20px 0 0 ;
+    background-color: $basic-white;
+    padding-left: 20px;
+
+    h3 {
+      color: $accent-color;
+    }
+
+    svg {
+      transition: transform .3s ease-in;
+    }
+
+    &--inactive {
+      border-radius: 20px;
+      margin-bottom: 20px;
+
+      h3 {
+        color: $primary-text-color;
+      }
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__tab-content {
+    margin-bottom: 20px;
+
+    &--inactive {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  }
+
+  &--tabbed {
+    .adaptive-tabs__nav {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 1.5rem;
+
+      >.adaptive-tabs__link {
+        flex: 1 0 auto;
+        text-align: center;
+      }
+    }
+
+    .adaptive-tabs__content {
+      >.adaptive-tabs__link {
+        display: none;
+      }
+    }
+  }
+
+  @include above($tablet-width) {
+    &__link {
+      border-radius: none;
+
+      &--inactive {
+        border-radius: 0%;
+        margin-bottom: 0;
+      }
+    }
+
+    &--tabbed {
+      .adaptive-tabs__nav > .adaptive-tabs__link  {
+        padding: 0 20px;
+        background: $basic-white;
+        border-radius: 20px 20px 0 0;
+
+        &--inactive {
+          background: $basic-grey100;
+        }
+      }
+    }
+  }
+
+  @include above($desktop-width ) {
+    width: 44vw;
+    padding-top: 80px;
+
+    &__link {
+      svg {
+        display: none;
+      }
+    }
+
+    &--tabbed {
+      .adaptive-tabs__nav > .adaptive-tabs__link  {
+        flex: 0 1 auto;
+      }
+    }
+  }
+}

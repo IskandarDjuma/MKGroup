@@ -1,0 +1,28 @@
+.headline__h2 {
+  @include font-size (24px, 36px, 700);
+  color: $secondary-text-color;
+
+  @include above($desktop-width) {
+    @include font-size (26px, 39px, 700);
+  }
+}
+
+.headline__h3 {
+  @include font-size (20px, 30px, 500);
+  color: $secondary-text-color;
+
+  @include above($desktop-width) {
+    @include font-size (22px, 33px, 500);
+  }
+}
+
+.headline__h4 {
+  @include font-size (16px, 24px, 500);
+  color: $secondary-text-color;
+
+  @include above($desktop-width) {
+    @include font-size (18px, 27px, 500);
+  }
+}
+
+

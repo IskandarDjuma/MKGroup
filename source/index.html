@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Велосипеды</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.webmanifest">
+
+
+</head>
+
+<body class="page__body">
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Онлайн магазин велосипедов</h1>
+    <section>
+      <div class="container">
+        <div class="adaptive-tabs" data-threshold="768">
+          <div class="adaptive-tabs__content">
+            <a class="adaptive-tabs__link" href="#" data-target="#mount-bike">
+              <h3 class="headline__h3 tab__headline">Горный велосипед</h3>
+              <svg class="tab__icon" width="24" height="24">
+                <use href="img/sprite.svg#arrow-up-icon"></use>
+              </svg>
+            </a>
+            <div class="adaptive-tabs__tab-content" id="mount-bike">
+              <div class="tab__content">
+                <div class="tab__good good">
+                  <picture class="good__img-wrap">
+                    <source media="(min-width: 1280px)" srcset="img/mount-bike-lg@1x.png 1x, img/mount-bike-lg@2x.png 2x">
+                    <img class="good__img" src="img/mount-bike-sm@1x.png" srcset="img/mount-bike-sm@2x.png"
+                      alt="Горный велосипед салатового цвета" width="295" height="192" loading="lazy">
+                  </picture>
+                  <div class="good__info">
+                    <h2 class="headline__h2">Велосипед STELS Navigator 510&nbsp;HD 26 2022</h2>
+                    <p class="good__subtitle">Данный велосипед с&nbsp;колесами 26&nbsp;дюймов хорошо подходит высоким
+                      подросткам. Прогиб рамы и&nbsp;небольшой размер рамы расчитан на&nbsp;рост от&nbsp;135
+                      до&nbsp;165&nbsp;см.</p>
+                    <p class="good__subtitle">Суммарный вес велосипеда был снижен до&nbsp;16,9&nbsp;кг, так как рама
+                      была
+                      изготовлена с&nbsp;учетом использования велосипеда подростками.</p>
+                  </div>
+                </div>
+                <div class="property">
+                  <h4 class="headline__h4">Характеристики</h4>
+                  <ol class="property__list">
+                    <li class="property__item">Двойной обод</li>
+                    <li class="property__item">Алюминиевый сплав</li>
+                    <li class="property__item">Колеса диаметром 26&nbsp;дюймов</li>
+                    <li class="property__item">Покрышки 26&times;1,95&Prime;</li>
+                  </ol>
+                  <h4 class="headline__h4" aria-labelledby="property__input">Добавить характеристику</h4>
+                  <form class="property__form" action="#" method="post">
+                    <fieldset class="property__fieldset">
+                      <label class="visually-hidden" for="property__input ">Добавьте интересующую вас деталь</label>
+                      <input id="property__input" сlass="property__input" type="text" placeholder="Алюминиевый сплав" required >
+                      <button class="btn btn--primary property__button" type="button">Добавить</button>
+                    </fieldset>
+                    <div class="property__btns">
+                      <button class="btn btn--primary" type="submit">Окей</button>
+                      <button class="btn btn--secondary" type="reset">Отмена</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <a class="adaptive-tabs__link" href="#" data-target="#women-bike">
+              <h3 class="headline__h3 tab__headline">Женский велосипед</h3>
+              <svg class="tab__icon" width="24" height="24">
+                <use href="img/sprite.svg#arrow-up-icon"></use>
+              </svg>
+            </a>
+            <div class="adaptive-tabs__tab-content" id="women-bike">
+              <div class="tab__content">
+                <div class="tab__good good">
+                  <picture class="good__img-wrap">
+                    <source media="(min-width: 1280px)" srcset="img/women-bike-lg@1x.png 1x, img/women-bike-lg@2x.png 2x">
+                    <img class="good__img" src="img/women-bike.sm@1x.png" srcset="img/women-bike.sm@2x.png"
+                      alt="Женский велосипед с искривленной рамой" width="295" height="192" loading="lazy">
+                  </picture>
+                  <div class="good__info">
+                    <h2 class="headline__h2">Велосипед SCHWINN Traveler women 2022</h2>
+                    <p class="good__subtitle">Женский велосипед со&nbsp;стальной рамой Classic step-true lightweight
+                      позволяет девушкам без проблем его перемещать.</p>
+                    <p class="good__subtitle">На&nbsp;данном велосипеде имеется 7&nbsp;скоростей с&nbsp;переключателями
+                      от&nbsp;Shimano, а&nbsp;жесткая вилка обеспечивает отличную управляемость. Подходит для катания
+                      по&nbsp;асфальтированным поверхностям.</p>
+                  </div>
+                </div>
+                <div class="property">
+                  <h4 class="headline__h4">Характеристики</h4>
+                  <ol class="property__list property__list--icon ">
+                    <li class="property__item">Стальная рама</li>
+                    <li class="property__item">Колеса диаметром 24&nbsp;дюймов</li>
+                    <li class="property__item">Жесткая вилка</li>
+                    <li class="property__item">7&nbsp;скоростей;</li>
+                  </ol>
+                  <h4 class="headline__h4" aria-labelledby="property__input">Добавить характеристику</h4>
+                  <form class="property__form" action="#" method="post">
+                    <fieldset class="property__fieldset">
+                      <label for="property__input" class="visually-hidden">Добавьте интересующую вас деталь</label>
+                      <input id="property__input" сlass="property__input" type="text" placeholder="Алюминиевый сплав" required>
+                      <button class="btn btn--primary property__button" type="button">Добавить</button>
+                    </fieldset>
+                    <div class="property__btns">
+                      <button class="btn btn--primary" type="submit">Окей</button>
+                      <button class="btn btn--secondary" type="reset">Отмена</button>
+                    </div>
+                  </form>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.min.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+
+.tab__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab__content {
+  position: relative;
+  background-color: $basic-white;
+  padding: 0 20px;
+  padding-bottom: 30px;
+  border-radius: 0 0 20px 20px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include above ($desktop-width) {
+    overflow: hidden;
+    padding: 0 60px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+.tab__header-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tab__header-item {
+  cursor: pointer;
+  transition: 0.3s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}

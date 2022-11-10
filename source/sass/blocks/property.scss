@@ -1,0 +1,108 @@
+.property__list {
+  padding-left: 20px;
+  padding-bottom: 30px;
+
+  &--icon {
+    li {
+      padding-left: 5px;
+
+      &::marker {
+        content: url("../img/icon/bike-icon.svg") ;
+      }
+    }
+  }
+
+  @include above ($desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.property {
+  h4 {
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  @include above ($desktop-width) {
+    padding-top: 40px;
+  }
+}
+
+.property__item {
+  padding-bottom: 15px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @include above ($desktop-width) {
+    width: 50%;
+    flex: 1 0 auto;
+  }
+}
+
+.property__form {
+  fieldset {
+    border: none;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+
+  input {
+    padding: 1em;
+    border: 1px solid $basic-grey100;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    width: 100%;
+
+    &::placeholder {
+      font-size: 1em;
+      color: $basic-grey100;
+    }
+
+    &:focus {
+      outline: 1px solid $accent-color;
+    }
+  }
+
+  @include above ($tablet-width) {
+    fieldset {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+    }
+
+    input {
+      margin-bottom: 0;
+      width: 65%;
+    }
+  }
+}
+
+.property__button {
+  width: 100%;
+
+  @include above ($tablet-width) {
+    width: 30%
+  }
+}
+
+.property__btns {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 10px 40px rgba(12, 12, 12, 0.1);
+  padding: 30px 20px;
+  border-radius: 16px;
+
+  @include above ($tablet-width) {
+    justify-content: flex-start;
+  }
+}
+
+
+

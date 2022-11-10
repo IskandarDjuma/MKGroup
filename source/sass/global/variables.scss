@@ -1,0 +1,28 @@
+// Fonts
+$primary-text: "Montserrat", "Arial", sans-serif;
+
+// Color
+$basic-blue: #3922c5;
+$basic-black: #000000;
+$basic-black100: #0C0C0C;
+$basic-white: #ffffff;
+$basic-grey: #494949;
+$basic-grey100: #D9D9D9;
+$basic-grey200: #F4F4F4;
+$transparent: rgba($basic-black, 0);
+
+$accent-color: $basic-blue;
+$primary-text-color: $basic-grey;
+$secondary-text-color: $basic-black100;
+$bg-color: $basic-grey200;
+
+
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1280px;
+$mobile-width-only: 767px;
+
+//Retina
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
